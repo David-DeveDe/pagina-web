@@ -15,6 +15,7 @@
             margin: 0 auto;
             border: 5px solid yellow padding 16px;
             display: flex;
+            text-align: center;
 
         }
 
@@ -32,6 +33,11 @@
      height: 650px;
 
         }
+
+        autor {
+            fonte font-weight: bold;
+        }
+
     </style>
 
 </head>
@@ -43,12 +49,10 @@
     </header>
 
     <main>
-
-        
-
+        <article><
         <img src="imagem.webp"alt = "imagem inicial>"
         <div>
-            <p>primeiro campeão intercontinental
+            <p class="autor">primeiro campeão intercontinental
             <p>4 vezes campẽao brasileiro
             <p> e conhecido mundialmente pelo mundo</p>
             <p>foi fundado em 21 de agosto de 1898</p>
@@ -82,10 +86,80 @@
             sses acontecimentos fizeram do Vasco da Gama não apenas um dos clubes mais vencedores do Brasil, mas também
             uma
             instituição com papel importante na história social e esportiva do país.
+            <button>🗿​ <spam>0</spam>​</button>
+            <button>​🖕🏼​​ <spam>0</spam>​</button>
+            
         </div>
 
     </main>
 
+
+
+    <article><
+        <img src="imagem.webp"alt = "imagem inicial>"
+        <div>
+            <p class="autor">primeiro campeão intercontinental
+            <p>4 vezes campẽao brasileiro
+            <p> e conhecido mundialmente pelo mundo</p>
+            <p>foi fundado em 21 de agosto de 1898</p>
+            <p> destacando-se pelo pioneirismo social, a construção de São Januário</p>
+            <h1> IDOLOS/JOGADORES MARCANTES</h1>
+            <p>Roberto Dinamite – Considerado o maior jogador da história do clube. É o maior artilheiro, com 708 gols
+                em
+                1.025 partidas</p>
+            <p>Romário – Revelado pelo Vasco, marcou 321 gols pelo clube. Foi campeão brasileiro (2000), da Mercosul
+                (2000)
+                e campeão carioca.</p>
+            <p>Juninho Pernambucano – Conhecido como "Reizinho da Colina", foi protagonista da conquista da Libertadores
+                de
+                1998 e dos Brasileiros de 1997 e 2000. </p>
+            <h3>◤✠◢</h3>
+            <p>Felipe – Maestro da geração campeã da Libertadores de 1998, conquistou também dois Campeonatos
+                Brasileiros e
+                a Copa do Brasil de 2011.</p>
+            <h1>FATOS HISTORICOS</h1>
+            <p>Na década de 1940, o Vasco formou o lendário "Expresso da Vitória", equipe que conquistou diversos
+                títulos
+                estaduais e nacionais.</p>
+            <p>Virada histórica na Copa Mercosul (2000)
+                Na decisão contra o Palmeiras, o Vasco perdia por 3 a 0 no intervalo e venceu por 4 a 3</p>
+            <p>Copa do Brasil de 2011
+                O clube venceu a competição pela primeira vez, garantindo vaga na Libertadores de 2012.</p>
+            <p>O clube possui uma das maiores rivalidades do país, especialmente com Flamengo, Fluminense e Botafogo,
+                formando o grupo dos quatro grandes do Rio de Janeiro.</p>
+
+            <h1>FINALIZANDO</h1>
+            sses acontecimentos fizeram do Vasco da Gama não apenas um dos clubes mais vencedores do Brasil, mas também
+            uma
+            instituição com papel importante na história social e esportiva do país.
+            <button>🗿​ <spam>0</spam>​</button>
+            <button>​🖕🏼​​ <spam>0</spam>​</button>
+            
+        </div>
+
+    </main>
+    
+
 </body>
+<script>
+    const botoes = document.querySelectorAll("button");
+    
+    botoes.forEach(function (botao) {
+    let curtiu = false;
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado() {
+    console.log("fui clicado");
+    let texto = botao.querySelector("span");
+    if (curtiu === false) {
+    texto.textContent++;
+    curtiu = true;
+    } else {
+    texto.textContent--;
+    curtiu = false;
+    }
+    
+    }
+    })
+    </script>
 
 </html>
